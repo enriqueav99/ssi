@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="Quarkus" url="file://$PROJECT_DIR$/common_quarkus" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/gateway" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/gateway2" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/ws-productos" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/ws-socios" />
+    <file type="web" url="file://$PROJECT_DIR$/web" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ws-socios/pom.xml" />
+        <option value="$PROJECT_DIR$/common-quarkus/pom.xml" />
+        <option value="$PROJECT_DIR$/common_quarkus/pom.xml" />
+        <option value="$PROJECT_DIR$/ws-productos/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway2/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/common-quarkus/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
