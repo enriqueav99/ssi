@@ -14,7 +14,6 @@
         <module>common_quarkus</module>
         <module>ws-productos</module>
         <module>gateway2</module>
-        <module>web</module>
     </modules>
 
     <properties>
