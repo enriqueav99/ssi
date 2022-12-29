@@ -10,14 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009c8291-fbfa-4569-87a3-d48998f5a58d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e81be5b5-6d1a-4deb-88e3-6e13e17fd917.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e81be5b5-6d1a-4deb-88e3-6e13e17fd917.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-productos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ws-productos/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/resources/ProductosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/resources/ProductosResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-productos/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ws-productos/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/SociosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/SociosResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws-productos/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws-socios/Dockerfile" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +69,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/Administrador/Desktop/sistemas de informacion/TRABAJO1/ssi",
+    "last_opened_file_path": "/Users/Administrador/Desktop/sistemas de informacion/TRABAJO1/ssi/ws-socios",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,8 +83,9 @@
       <recent name="es.upsa.dasi.providers.converters" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/gateway2" />
+      <recent name="$PROJECT_DIR$/ws-socios" />
       <recent name="$PROJECT_DIR$/ws-productos" />
+      <recent name="$PROJECT_DIR$/gateway2" />
       <recent name="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -363,7 +359,7 @@
       <workItem from="1654291961320" duration="103000" />
       <workItem from="1672248245323" duration="3438000" />
       <workItem from="1672336658450" duration="66000" />
-      <workItem from="1672336980666" duration="2611000" />
+      <workItem from="1672336980666" duration="3935000" />
     </task>
     <servers />
   </component>
