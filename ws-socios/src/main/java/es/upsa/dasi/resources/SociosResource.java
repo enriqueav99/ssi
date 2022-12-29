@@ -4,6 +4,7 @@ import es.upsa.dasi.dtos.UnidentifiedSocio;
 import es.upsa.dasi.exceptions.TiendaException;
 import es.upsa.dasi.model.Socio;
 import es.upsa.dasi.services.SocioService;
+import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -13,6 +14,7 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Path("/socios")
+@Tag(name = "socios")
 @Produces(MediaType.APPLICATION_JSON)
 public class SociosResource {
 
