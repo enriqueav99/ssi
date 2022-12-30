@@ -98,12 +98,6 @@ public class SociosResource {
 
 
 
-
-
-
-
-
-
     @Operation(operationId = "selecSocio",
             summary = "Acceso a los datos de varios socios identificados por su codigo",
             description = "Devuelve los datos de los socios identificados a través de la lista de códigos que se proporciona"
@@ -141,17 +135,6 @@ public class SociosResource {
                 .entity(new GenericEntity<List<Socio>>(socios){})
                 .build();
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
     @Operation(operationId = "addSocio",
