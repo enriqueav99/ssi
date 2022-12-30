@@ -16,7 +16,7 @@ import javax.ws.rs.core.Application;
                         name = "Sistemas de información",
                         email = "eandresvi.inf@upsa.es"
                 ),
-                description = "API de producots",
+                description = "API de productos",
                 license = @License(name = "Apache 2.0",
                         url = "http://www.apache.org/licenses/LICENSE-2.0.html"
                 )
@@ -27,5 +27,5 @@ import javax.ws.rs.core.Application;
         }
 )
 @ApplicationPath("/")
-public class productosApp extends Application {
+public class ProductosApp extends Application {
 }

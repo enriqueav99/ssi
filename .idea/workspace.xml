@@ -11,14 +11,19 @@
   <component name="ChangeListManager">
     <list default="true" id="009c8291-fbfa-4569-87a3-d48998f5a58d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/common-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/common-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/common-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common_quarkus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common_quarkus/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources/ProductosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources/ProductosResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources/SociosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources/SociosResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ws-productos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ws-productos/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/productosApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/ProductosApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/resources/ProductosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/resources/ProductosResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ws-socios/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/SociosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/SociosResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +79,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/Administrador/Desktop/sistemas de informacion/TRABAJO1/ssi&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/administrador/Desktop/GitHub/ssi/common_quarkus/src/main/java/es/upsa/dasi/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -89,10 +95,11 @@
       <recent name="es.upsa.dasi.providers.converters" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common_quarkus/src/main/java/es/upsa/dasi/resources" />
+      <recent name="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources" />
       <recent name="$PROJECT_DIR$/ws-socios" />
       <recent name="$PROJECT_DIR$/ws-productos" />
       <recent name="$PROJECT_DIR$/gateway2" />
-      <recent name="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ws-socios/src/main/resources/db/migration" />
@@ -375,6 +382,9 @@
       <workItem from="1672336980666" duration="3935000" />
       <workItem from="1672356849598" duration="2399000" />
       <workItem from="1672359892946" duration="1357000" />
+      <workItem from="1672391140736" duration="1557000" />
+      <workItem from="1672393485026" duration="12731000" />
+      <workItem from="1672419629374" duration="188000" />
     </task>
     <servers />
   </component>
