@@ -212,6 +212,33 @@ public class SociosResource {
 
 
 
+    @Operation(operationId = "updateSocio",
+            description = "Modifica los datos de un socio",
+            summary = "Modifica los datos del socio identificado por su codigo"
+    )
+    @APIResponses({
+            @APIResponse(responseCode = "200",
+                    description = "Se ha modificado los datos del socio",
+                    content = @Content(mediaType = MediaType.APPLICATION_JSON,
+                            schema = @Schema(type = SchemaType.OBJECT,
+                                    implementation = Producto.class
+                            )
+                    )
+            ),
+
+            @APIResponse(responseCode = "404",
+                    description = "No existe el socio identificado por el codigo indicado"
+            ),
+
+            @APIResponse(responseCode = "500",
+                    description = "Se ha producido un error",
+                    content = @Content(mediaType = MediaType.APPLICATION_JSON,
+                            schema = @Schema(type = SchemaType.OBJECT,
+                                    implementation = ErrorMessage.class
+                            )
+                    )
+            )
+    })
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     public Response updateSocio(Socio socio) throws TiendaException

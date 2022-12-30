@@ -2,6 +2,7 @@ package es.upsa.dasi.resources;
 
 import es.upsa.dasi.dtos.UnidentifiedSocio;
 import es.upsa.dasi.exceptions.TiendaException;
+import es.upsa.dasi.model.Producto;
 import es.upsa.dasi.model.Socio;
 import es.upsa.dasi.resources.providers.beans.ErrorMessage;
 import es.upsa.dasi.services.SociosService;
@@ -161,6 +162,35 @@ public class SociosResource {
 
 
 
+
+
+    @Operation(operationId = "putSocio",
+            description = "Modifica los datos de un socio",
+            summary = "Modifica los datos del socio identificado por su codigo"
+    )
+    @APIResponses({
+            @APIResponse(responseCode = "200",
+                    description = "Se ha modificado los datos del socio",
+                    content = @Content(mediaType = MediaType.APPLICATION_JSON,
+                            schema = @Schema(type = SchemaType.OBJECT,
+                                    implementation = Producto.class
+                            )
+                    )
+            ),
+
+            @APIResponse(responseCode = "404",
+                    description = "No existe el socio identificado por el codigo indicado"
+            ),
+
+            @APIResponse(responseCode = "500",
+                    description = "Se ha producido un error",
+                    content = @Content(mediaType = MediaType.APPLICATION_JSON,
+                            schema = @Schema(type = SchemaType.OBJECT,
+                                    implementation = ErrorMessage.class
+                            )
+                    )
+            )
+    })
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     public Response putSocio(Socio socio) throws TiendaException
