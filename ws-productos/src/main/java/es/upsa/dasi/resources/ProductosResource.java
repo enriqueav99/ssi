@@ -4,6 +4,7 @@ import es.upsa.dasi.dtos.UnidentifiedProducto;
 import es.upsa.dasi.exceptions.TiendaException;
 import es.upsa.dasi.model.Producto;
 import es.upsa.dasi.services.ProductosService;
+import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -12,6 +13,7 @@ import java.util.List;
 
 @Produces(MediaType.APPLICATION_JSON)
 @Path("/productos")
+@Tag(name = "productos")
 public class ProductosResource {
 
     @Inject
