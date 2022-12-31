@@ -102,7 +102,7 @@ services:
       QUARKUS_SWAGGER_UI_PATH: /swagger-ui
     depends_on:
       - database-socios
-      - redis-master
+      - redis-master-socio
 
   productos:
     build:
