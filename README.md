@@ -1,13 +1,18 @@
 # PRIMER TRABAJO SSI
-## Lista de cosas implementadas:  
-- se ha creado un nuevo archivo en common_quarkus (en providers.beans) llamado ErrorMessage utilizado en OpenApi y se ha añadido las dependencias para poder usarlo en el resto de módulos
-- documentación de todos los resources de todos los módulos (falta PUT en ws-socios y gateway2/resourceSocios)
-- cache(solo standAlone en socios)
-- flyway  
-- OpenAPI(falta documentar los recursos)  
-- Docker compose(falta retocar el del proyecto para cambiar la direccion de las API en gateway)   
-- Todo con quarkus 
 
+## Cosas que repasar/mejorar:  
+- Añadir dentro de los proyectos un directorio repositorio que vaya entre services y dao. Entonces cambiar la cache a esta en vez de servicios  
+- Revisar las documentaciones del openAPI(algun PUT habia duda y creo que faltaba algo por el gateway)  
+- Hay que mirar el tema de las comunicaciones asincronas y ver como lo podemos meter
+- Meter el apartado web y hacerlo sincrono(Pero con Jakarta en vez quarkus)2ºTrabajo
+
+## Lista de cosas implementadas:  
+- cache(solo standAlone en socios) Trabajo 1
+- flyway  Trabajo 1
+- OpenAPI  Trabajo 2
+- Docker compose Trabajos
+- Todo con quarkus  Trabajos
+- Comunicaciones sincronas Trabajos
 
 
 ## Pequeño recordatorio de como funciona git:  
