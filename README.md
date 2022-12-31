@@ -1,14 +1,10 @@
 # PRIMER TRABAJO SSI
 ## Lista de cosas implementadas:  
-- se ha creado un nuevo archivo en common_quarkus (en providers.beans) llamado ErrorMessage utilizado en OpenApi y se ha añadido las dependencias para poder usarlo en el resto de módulos
-- documentación de todos los resources de todos los módulos (falta PUT en ws-socios y gateway2/resourceSocios)
-- cache(solo standAlone en socios)
+- cache
 - flyway  
-- OpenAPI(falta documentar los recursos)  
+- OpenAPI  
 - Docker compose(falta retocar el del proyecto para cambiar la direccion de las API en gateway)   
 - Todo con quarkus 
-
-
 
 ## Pequeño recordatorio de como funciona git:  
 - Primero descargamos el repositorio con: git clone (url del repo) -b (nombre de la branch que queremos)
