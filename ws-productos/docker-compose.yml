@@ -12,23 +12,84 @@ services:
     volumes:
       - volume_database:/var/lib/postgresql/data/pgdata
 
+  redis-master:
+    image: bitnami/redis
+    environment:
+      REDIS_REPLICATION_MODE: master
+      REDIS_PORT_NUMBER: 6379
+      REDIS_PASSWORD: masterpassword
+    expose:
+      - 6379
+
+  redis-slave:
+    image: bitnami/redis
+    deploy:
+      replicas: 3
+    environment:
+      REDIS_REPLICATION_MODE: slave
+      REDIS_MASTER_HOST: redis-master
+      REDIS_MASTER_PORT_NUMBER: 6379
+      REDIS_MASTER_PASSWORD: masterpassword
+      REDIS_PORT_NUMBER: 6379
+      ALLOW_EMPTY_PASSWORD: yes
+    expose:
+      - 6379
+    depends_on:
+      - redis-master
+
   quarkus-1:
     build:
       dockerfile: Dockerfile
     ports:
       - 9092:8082
     environment:
+      QUARKUS_REDIS_HOSTS: redis://redis-master:6379
+      QUARKUS_REDIS_CLIENT_TYPE: replication
+      QUARKUS_REDIS_PASSWORD: masterpassword
+
       QUARKUS_DATASOURCE_DB_KIND: postgresql
       QUARKUS_DATASOURCE_USERNAME: system
       QUARKUS_DATASOURCE_PASSWORD: manager
       QUARKUS_DATASOURCE_JDBC_URL: jdbc:postgresql://database:5432/upsa
+
       QUARKUS_FLYWAY_CLEAN_AT_START: true
       QUARKUS_FLYWAY_MIGRATE_AT_START: true
+
       QUARKUS_SWAGGER_UI_ENABLE: true
       QUARKUS_SWAGGER_UI_ALWAYS_INCLUDE: true
       QUARKUS_SWAGGER_UI_PATH: /swagger-ui
     depends_on:
       - database
+      - redis-master
+      - redis-slave
+
+
+
+  quarkus-2:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 9192:8082
+    environment:
+      QUARKUS_REDIS_HOSTS: redis://redis-master:6379
+      QUARKUS_REDIS_CLIENT_TYPE: replication
+      QUARKUS_REDIS_PASSWORD: masterpassword
+
+      QUARKUS_DATASOURCE_DB_KIND: postgresql
+      QUARKUS_DATASOURCE_USERNAME: system
+      QUARKUS_DATASOURCE_PASSWORD: manager
+      QUARKUS_DATASOURCE_JDBC_URL: jdbc:postgresql://database:5432/upsa
+
+      QUARKUS_FLYWAY_CLEAN_AT_START: true
+      QUARKUS_FLYWAY_MIGRATE_AT_START: true
+
+      QUARKUS_SWAGGER_UI_ENABLE: true
+      QUARKUS_SWAGGER_UI_ALWAYS_INCLUDE: true
+      QUARKUS_SWAGGER_UI_PATH: /swagger-ui
+    depends_on:
+      - database
+      - redis-master
+      - redis-slave
 
 volumes:
   volume_database: {}

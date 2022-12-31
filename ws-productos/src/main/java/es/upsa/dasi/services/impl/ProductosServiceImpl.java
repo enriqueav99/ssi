@@ -6,6 +6,7 @@ import es.upsa.dasi.model.Producto;
 import es.upsa.dasi.model.Socio;
 import es.upsa.dasi.services.ProductosService;
 
+import javax.annotation.Priority;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.util.List;

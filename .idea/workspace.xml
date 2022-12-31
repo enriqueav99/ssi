@@ -11,14 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="009c8291-fbfa-4569-87a3-d48998f5a58d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/common-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-productos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ws-productos/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,33 +65,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/Administrador/Desktop/sistemas de informacion/TRABAJO1/ssi&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/Administrador/Desktop/sistemas de informacion/TRABAJO1/ssi/gateway2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="es.upsa.dasi.providers.converters" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ws-socios" />
-      <recent name="$PROJECT_DIR$/ws-productos" />
       <recent name="$PROJECT_DIR$/gateway2" />
-      <recent name="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi" />
+      <recent name="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources" />
+      <recent name="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources" />
+      <recent name="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/resources" />
+      <recent name="$PROJECT_DIR$/common_quarkus/src/main/java/es/upsa/dasi/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ws-socios/src/main/resources/db/migration" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="es.upsa.dasi.resources.providers" />
       <recent name="es.upsa.dasi" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -375,6 +371,12 @@
       <workItem from="1672336980666" duration="3935000" />
       <workItem from="1672356849598" duration="2399000" />
       <workItem from="1672359892946" duration="1357000" />
+      <workItem from="1672391140736" duration="1557000" />
+      <workItem from="1672393485026" duration="12731000" />
+      <workItem from="1672419629374" duration="188000" />
+      <workItem from="1672420988081" duration="6000" />
+      <workItem from="1672421892489" duration="2387000" />
+      <workItem from="1672441132674" duration="18704000" />
     </task>
     <servers />
   </component>

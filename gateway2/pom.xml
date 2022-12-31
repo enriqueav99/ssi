@@ -35,6 +35,10 @@
   <dependencies>
     <dependency>
       <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-openapi</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
       <artifactId>quarkus-rest-client-jsonb</artifactId>
     </dependency>
     <dependency>
@@ -80,6 +84,13 @@
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>es.upsa.dasi</groupId>
+          <artifactId>common_quarkus</artifactId>
+          <version>1.0.0</version>
+          <scope>compile</scope>
+      </dependency>
+
   </dependencies>
   <build>
     <plugins>

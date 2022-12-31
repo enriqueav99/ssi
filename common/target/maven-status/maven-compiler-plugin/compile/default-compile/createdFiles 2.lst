@@ -1,0 +1,17 @@
+es/upsa/dasi/exceptions/IncorrectFieldEntityException.class
+es/upsa/dasi/exceptions/EntityExistException.class
+es/upsa/dasi/exceptions/NotNullFieldException.class
+es/upsa/dasi/exceptions/TiendaRuntimeException.class
+es/upsa/dasi/dtos/UnidentifiedSocio$UnidentifiedSocioBuilder.class
+es/upsa/dasi/exceptions/ForeignKeyException.class
+es/upsa/dasi/model/Producto$ProductoBuilder.class
+es/upsa/dasi/exceptions/UncontrolledException.class
+es/upsa/dasi/exceptions/TiendaException.class
+es/upsa/dasi/dtos/UnidentifiedSocio.class
+es/upsa/dasi/model/Socio.class
+es/upsa/dasi/dtos/UnidentifiedProducto$UnidentifiedProductoBuilder.class
+es/upsa/dasi/exceptions/PrimaryKeyException.class
+es/upsa/dasi/dtos/UnidentifiedProducto.class
+es/upsa/dasi/exceptions/EntityNotFoundException.class
+es/upsa/dasi/model/Producto.class
+es/upsa/dasi/model/Socio$SocioBuilder.class
