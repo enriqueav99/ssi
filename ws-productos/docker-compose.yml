@@ -12,23 +12,38 @@ services:
     volumes:
       - volume_database:/var/lib/postgresql/data/pgdata
 
+  redis:
+    image: bitnami/redis
+    environment:
+      REDIS_PORT_NUMBER: 6379
+      ALLOW_EMPTY_PASSWORD: yes
+    expose:
+      - 6379
+
+
   quarkus-1:
     build:
       dockerfile: Dockerfile
     ports:
       - 9092:8082
     environment:
+      QUARKUS_REDIS_HOSTS: redis://redis:6379
+      QUARKUS_REDIS_CLIENT_TYPE: standalone
+
       QUARKUS_DATASOURCE_DB_KIND: postgresql
       QUARKUS_DATASOURCE_USERNAME: system
       QUARKUS_DATASOURCE_PASSWORD: manager
       QUARKUS_DATASOURCE_JDBC_URL: jdbc:postgresql://database:5432/upsa
+
       QUARKUS_FLYWAY_CLEAN_AT_START: true
       QUARKUS_FLYWAY_MIGRATE_AT_START: true
+
       QUARKUS_SWAGGER_UI_ENABLE: true
       QUARKUS_SWAGGER_UI_ALWAYS_INCLUDE: true
       QUARKUS_SWAGGER_UI_PATH: /swagger-ui
     depends_on:
       - database
+      - redis
 
 volumes:
   volume_database: {}

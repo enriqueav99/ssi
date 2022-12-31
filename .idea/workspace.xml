@@ -10,11 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009c8291-fbfa-4569-87a3-d48998f5a58d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/common-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/common-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/SociosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/SociosResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/cache/ServiceCacheDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/cache/ServiceCacheDecorator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,7 +374,7 @@
       <workItem from="1672419629374" duration="188000" />
       <workItem from="1672420988081" duration="6000" />
       <workItem from="1672421892489" duration="2387000" />
-      <workItem from="1672441132674" duration="813000" />
+      <workItem from="1672441132674" duration="7286000" />
     </task>
     <servers />
   </component>
