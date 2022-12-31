@@ -36,7 +36,7 @@ public class ServiceCacheDecorator implements ProductosService {
     @PostConstruct
     void init()
     {
-        logger.info("eyeyeyeyeyyeyeye--------");
+
         this.productosRedisCommands = redisDatasource.value(Producto.class);
     }
 
