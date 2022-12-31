@@ -22,8 +22,8 @@ import io.quarkus.redis.datasource.RedisDataSource;
 public class ServiceCacheDecorator implements ProductosService {
 
     @Inject
-    @Delegate
     @Any
+    @Delegate
     ProductosService service;
 
     @Inject
