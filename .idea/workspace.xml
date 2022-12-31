@@ -11,19 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="009c8291-fbfa-4569-87a3-d48998f5a58d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/common-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/common-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/ProductosDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/ProductosDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/SociosDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/SociosDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/impl/ProductosDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/impl/SociosDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/impl/ProductosServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/impl/ProductosServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/impl/SociosServicecImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/impl/SociosServicecImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/resources/providers/beans/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/resources/providers/beans/ErrorMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/providers/beans/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/providers/beans/ErrorMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -388,7 +376,7 @@
       <workItem from="1672419629374" duration="188000" />
       <workItem from="1672420988081" duration="6000" />
       <workItem from="1672421892489" duration="2387000" />
-      <workItem from="1672441132674" duration="17679000" />
+      <workItem from="1672441132674" duration="18704000" />
     </task>
     <servers />
   </component>

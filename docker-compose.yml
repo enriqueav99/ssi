@@ -25,13 +25,58 @@ services:
     volumes:
           - volume_socios:/var/lib/postgresql/data/pgdata
 
-  redis:
+
+
+  redis-master-socio:
     image: bitnami/redis
     environment:
+      REDIS_REPLICATION_MODE: master
+      REDIS_PORT_NUMBER: 6379
+      REDIS_PASSWORD: masterpassword
+    expose:
+      - 6379
+
+  redis-slave-socio:
+    image: bitnami/redis
+    deploy:
+      replicas: 3
+    environment:
+      REDIS_REPLICATION_MODE: slave
+      REDIS_MASTER_HOST: redis-master-socio
+      REDIS_MASTER_PORT_NUMBER: 6379
+      REDIS_MASTER_PASSWORD: masterpassword
       REDIS_PORT_NUMBER: 6379
       ALLOW_EMPTY_PASSWORD: yes
     expose:
       - 6379
+    depends_on:
+      - redis-master-socio
+
+  redis-master-producto:
+    image: bitnami/redis
+    environment:
+      REDIS_REPLICATION_MODE: master
+      REDIS_PORT_NUMBER: 6379
+      REDIS_PASSWORD: masterpassword
+    expose:
+      - 6379
+
+  redis-slave-producto:
+    image: bitnami/redis
+    deploy:
+      replicas: 3
+    environment:
+      REDIS_REPLICATION_MODE: slave
+      REDIS_MASTER_HOST: redis-master-producto
+      REDIS_MASTER_PORT_NUMBER: 6379
+      REDIS_MASTER_PASSWORD: masterpassword
+      REDIS_PORT_NUMBER: 6379
+      ALLOW_EMPTY_PASSWORD: yes
+    expose:
+      - 6379
+    depends_on:
+      - redis-master-producto
+
 
   socios:
     build:
@@ -40,8 +85,9 @@ services:
     ports:
       - 9091:8081
     environment:
-      QUARKUS_REDIS_HOSTS: redis://redis:6379
-      QUARKUS_REDIS_CLIENT_TYPE: standalone
+      QUARKUS_REDIS_HOSTS: redis://redis-master-socio:6379
+      QUARKUS_REDIS_CLIENT_TYPE: replication
+      QUARKUS_REDIS_PASSWORD: masterpassword
 
       QUARKUS_DATASOURCE_DB_KIND: postgresql
       QUARKUS_DATASOURCE_USERNAME: system
@@ -56,7 +102,7 @@ services:
       QUARKUS_SWAGGER_UI_PATH: /swagger-ui
     depends_on:
       - database-socios
-      - redis
+      - redis-master
 
   productos:
     build:
@@ -65,8 +111,9 @@ services:
     ports:
       - 9092:8082
     environment:
-      QUARKUS_REDIS_HOSTS: redis://redis:6379
-      QUARKUS_REDIS_CLIENT_TYPE: standalone
+      QUARKUS_REDIS_HOSTS: redis://redis-master-producto:6379
+      QUARKUS_REDIS_CLIENT_TYPE: replication
+      QUARKUS_REDIS_PASSWORD: masterpassword
 
       QUARKUS_DATASOURCE_DB_KIND: postgresql
       QUARKUS_DATASOURCE_USERNAME: system
@@ -81,7 +128,7 @@ services:
       QUARKUS_SWAGGER_UI_PATH: /swagger-ui
     depends_on:
       - database-productos
-      - redis
+      - redis-master-producto
 
 
   gateway:
