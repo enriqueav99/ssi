@@ -5,6 +5,7 @@ import es.upsa.dasi.dtos.UnidentifiedSocio;
 import es.upsa.dasi.exceptions.TiendaException;
 import es.upsa.dasi.model.Socio;
 import es.upsa.dasi.services.SociosService;
+import org.eclipse.microprofile.rest.client.inject.RestClient;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -16,6 +17,7 @@ public class SociosServicecImpl implements SociosService
 {
 
     @Inject
+    @RestClient
     SociosDao dao;
     @Override
     public List<Socio> requestSocios() throws TiendaException {

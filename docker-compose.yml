@@ -1,0 +1,102 @@
+version: "3.8"
+services:
+  database-productos:
+    image: postgres
+    expose:
+      - 5432
+    environment:
+      POSTGRES_DB: upsa
+      POSTGRES_USER: system
+      POSTGRES_PASSWORD: manager
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - volume_productos:/var/lib/postgresql/data/pgdata
+
+
+  database-socios:
+    image: postgres
+    expose:
+      - 5432
+    environment:
+      POSTGRES_DB: upsa
+      POSTGRES_USER: system
+      POSTGRES_PASSWORD: manager
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+          - volume_socios:/var/lib/postgresql/data/pgdata
+
+  redis:
+    image: bitnami/redis
+    environment:
+      REDIS_PORT_NUMBER: 6379
+      ALLOW_EMPTY_PASSWORD: yes
+    expose:
+      - 6379
+
+  socios:
+    build:
+      context: ws-socios
+      dockerfile: Dockerfile
+    ports:
+      - 9091:8081
+    environment:
+      QUARKUS_REDIS_HOSTS: redis://redis:6379
+      QUARKUS_REDIS_CLIENT_TYPE: standalone
+
+      QUARKUS_DATASOURCE_DB_KIND: postgresql
+      QUARKUS_DATASOURCE_USERNAME: system
+      QUARKUS_DATASOURCE_PASSWORD: manager
+      QUARKUS_DATASOURCE_JDBC_URL: jdbc:postgresql://database-socios:5432/upsa
+
+      QUARKUS_FLYWAY_CLEAN_AT_START: true
+      QUARKUS_FLYWAY_MIGRATE_AT_START: true
+
+      QUARKUS_SWAGGER_UI_ENABLE: true
+      QUARKUS_SWAGGER_UI_ALWAYS_INCLUDE: true
+      QUARKUS_SWAGGER_UI_PATH: /swagger-ui
+    depends_on:
+      - database-socios
+      - redis
+
+  productos:
+    build:
+      context: ws-productos
+      dockerfile: Dockerfile
+    ports:
+      - 9092:8082
+    environment:
+      QUARKUS_REDIS_HOSTS: redis://redis:6379
+      QUARKUS_REDIS_CLIENT_TYPE: standalone
+
+      QUARKUS_DATASOURCE_DB_KIND: postgresql
+      QUARKUS_DATASOURCE_USERNAME: system
+      QUARKUS_DATASOURCE_PASSWORD: manager
+      QUARKUS_DATASOURCE_JDBC_URL: jdbc:postgresql://database-productos:5432/upsa
+
+      QUARKUS_FLYWAY_CLEAN_AT_START: true
+      QUARKUS_FLYWAY_MIGRATE_AT_START: true
+
+      QUARKUS_SWAGGER_UI_ENABLE: true
+      QUARKUS_SWAGGER_UI_ALWAYS_INCLUDE: true
+      QUARKUS_SWAGGER_UI_PATH: /swagger-ui
+    depends_on:
+      - database-productos
+      - redis
+
+
+  gateway:
+    build:
+      context: gateway2
+      dockerfile: Dockerfile
+    ports:
+      - 9999:8888
+    environment:
+      SOCIOS_API_MP_REST_URI: http://socios:8081
+      PRODUCTOS_API_MP_REST_URI: http://productos:8082
+    depends_on:
+      - productos
+      - socios
+
+volumes:
+   volume_socios: {}
+   volume_productos: {}

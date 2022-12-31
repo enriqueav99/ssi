@@ -5,6 +5,7 @@ import es.upsa.dasi.dtos.UnidentifiedProducto;
 import es.upsa.dasi.exceptions.TiendaException;
 import es.upsa.dasi.model.Producto;
 import es.upsa.dasi.services.ProductosService;
+import org.eclipse.microprofile.rest.client.inject.RestClient;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -14,6 +15,7 @@ import java.util.Optional;
 @ApplicationScoped
 public class ProductosServiceImpl implements ProductosService {
     @Inject
+    @RestClient
     ProductosDao dao;
 
     @Override
