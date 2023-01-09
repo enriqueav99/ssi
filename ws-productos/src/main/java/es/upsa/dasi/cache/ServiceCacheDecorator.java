@@ -19,7 +19,7 @@ import io.quarkus.redis.datasource.RedisDataSource;
 
 @Decorator
 @Priority(100)
-public class ServiceCacheDecorator implements ProductosService {
+public abstract class ServiceCacheDecorator implements ProductosService {
 
     @Inject
     @Any
@@ -41,10 +41,6 @@ public class ServiceCacheDecorator implements ProductosService {
     }
 
 
-    @Override
-    public List<Producto> requestProductos() throws TiendaException {
-        return service.requestProductos();
-    }
 
     @Override
     public Optional<Producto> requestProductoByCodigo(String codigo) throws TiendaException {
