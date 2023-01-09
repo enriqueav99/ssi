@@ -9,22 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="009c8291-fbfa-4569-87a3-d48998f5a58d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/dtos/UnidentifiedSocio 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/dtos/UnidentifiedSocio$UnidentifiedSocioBuilder 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/exceptions/NotNullFieldException 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/model/Producto 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/model/Producto$ProductoBuilder 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/model/Socio 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/common-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/common-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom 2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom 2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles 2.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles 2.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/cache/ServiceCacheDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/cache/ServiceCacheDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/cache/ServiceCacheDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/cache/ServiceCacheDecorator.java" afterDir="false" />
-    </list>
+    <list default="true" id="009c8291-fbfa-4569-87a3-d48998f5a58d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -289,7 +274,7 @@
       <workItem from="1672420988081" duration="6000" />
       <workItem from="1672421892489" duration="2387000" />
       <workItem from="1672441132674" duration="19513000" />
-      <workItem from="1673266512929" duration="2211000" />
+      <workItem from="1673266512929" duration="2293000" />
     </task>
     <servers />
   </component>
