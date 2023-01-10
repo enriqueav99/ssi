@@ -1,4 +1,5 @@
-# PRIMER TRABAJO SSI
+# TRABAJO SSI
+Proyecto con varios microservicos con comunicaciones sincronas
 
 ## Cosas que repasar/mejorar:  
 - Añadir dentro de los proyectos un directorio repositorio que vaya entre services y dao. Entonces cambiar la cache a esta en vez de servicios  
