@@ -79,9 +79,7 @@ services:
 
 
   socios:
-    build:
-      context: ws-socios
-      dockerfile: Dockerfile
+    image: enriqueav99/ws-socios
     ports:
       - 9091:8081
     environment:
@@ -105,9 +103,7 @@ services:
       - redis-master-socio
 
   productos:
-    build:
-      context: ws-productos
-      dockerfile: Dockerfile
+    image: enriqueav99/ws-productos
     ports:
       - 9092:8082
     environment:
@@ -132,9 +128,7 @@ services:
 
 
   gateway:
-    build:
-      context: gateway2
-      dockerfile: Dockerfile
+    image: enriqueav99/gateway
     ports:
       - 9999:8888
     environment:
