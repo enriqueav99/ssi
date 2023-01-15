@@ -231,14 +231,6 @@ public class SociosResource {
                 .orElseGet(()->Response.status(Response.Status.NOT_FOUND).build());
     }
 
-
-
-
-
-
-
-
-
     @Operation(operationId = "requestDeleteSocio",
             description = "Elimina un socio",
             summary = "Elimina el socio identificado por su codigo"
@@ -254,6 +246,7 @@ public class SociosResource {
     })
     @DELETE
     @Path("/{codigo}")
+    @Produces(MediaType.TEXT_PLAIN)
     public Response requestDeleteSocio(@Parameter(required = true,
                                                   description = "Código del socio",
                                                   in = ParameterIn.PATH,
@@ -263,6 +256,6 @@ public class SociosResource {
                                        @PathParam("codigo") String codigo) throws TiendaException {
 
 
-        return (service.deleteSocio(codigo))? Response.ok().build() : Response.status(Response.Status.NOT_FOUND).build();
+        return (service.deleteSocio(codigo))? Response.ok().entity("true").build() : Response.status(Response.Status.NOT_FOUND).build();
     }
 }

@@ -225,6 +225,7 @@ public class SociosResource {
     })
     @DELETE
     @Path("/{codigo}")
+    @Produces(MediaType.TEXT_PLAIN)
     public Response deleteSocio(@Parameter(required = true,
                                             description = "Código del socio",
                                             in = ParameterIn.PATH,
@@ -234,8 +235,8 @@ public class SociosResource {
                                  @PathParam("codigo") String codigo) throws TiendaException {
 
 
-        if (socioService.deleteSocio(codigo)){
-            return Response.ok().build();
+        if (socioService.deleteSocio(codigo)=="true"){
+            return Response.ok().entity("true").build();
         }else {
             return Response.status(Response.Status.NOT_FOUND).build();
         }

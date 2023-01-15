@@ -40,7 +40,7 @@ public class SociosServicecImpl implements SociosService
     }
 
     @Override
-    public boolean deleteSocio(String codigo) throws TiendaException {
+    public String deleteSocio(String codigo) throws TiendaException {
         return dao.deleteSocio(codigo);
     }
 

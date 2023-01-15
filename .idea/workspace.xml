@@ -9,7 +9,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="009c8291-fbfa-4569-87a3-d48998f5a58d" name="Changes" comment="" />
+    <list default="true" id="009c8291-fbfa-4569-87a3-d48998f5a58d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e81be5b5-6d1a-4deb-88e3-6e13e17fd917.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e81be5b5-6d1a-4deb-88e3-6e13e17fd917.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e81be5b5-6d1a-4deb-88e3-6e13e17fd917/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e81be5b5-6d1a-4deb-88e3-6e13e17fd917/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e81be5b5-6d1a-4deb-88e3-6e13e17fd917/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e81be5b5-6d1a-4deb-88e3-6e13e17fd917/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/dtos/UnidentifiedProducto 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/dtos/UnidentifiedProducto$UnidentifiedProductoBuilder 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/exceptions/EntityNotFoundException 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/exceptions/ForeignKeyException 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/exceptions/PrimaryKeyException 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/exceptions/TiendaException 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/exceptions/TiendaRuntimeException 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/exceptions/UncontrolledException 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/es/upsa/dasi/model/Socio$SocioBuilder 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/common-1.0 2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/common-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/common-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom 2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles 2.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles 2.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common_quarkus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common_quarkus/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/SociosDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/SociosDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources/SociosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources/SociosResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/SociosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/SociosService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/impl/SociosServicecImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/impl/SociosServicecImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws-socios/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/SociosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/SociosResource.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +101,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/Administrador/Desktop/sistemas de informacion/TRABAJO1/defi/ssi",
+    "last_opened_file_path": "/Users/Administrador/Desktop/sistemas de informacion/TRABAJO1/defi/ssi/web/src/main/java/es/upsa/dasi/web/daos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,11 +115,11 @@
       <recent name="es.upsa.dasi.providers.converters" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/daos" />
       <recent name="$PROJECT_DIR$/gateway2" />
       <recent name="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources" />
       <recent name="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources" />
       <recent name="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/resources" />
-      <recent name="$PROJECT_DIR$/common_quarkus/src/main/java/es/upsa/dasi/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ws-socios/src/main/resources/db/migration" />
@@ -95,6 +130,7 @@
       <recent name="es.upsa.dasi" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="es.upsa.dasi.web.daos.providers" />
       <recent name="es.upsa.dasi.providers.converters" />
       <recent name="es.upsa.dasi.providers" />
       <recent name="es.upsa.dasi.exceptions" />
@@ -181,24 +217,124 @@
     </configuration>
     <configuration name="common_quarkus" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
       <module name="common_quarkus" />
+      <QsMavenRunConfiguration>
+        <MavenSettings>
+          <option name="myGeneralSettings" />
+          <option name="myRunnerSettings" />
+          <option name="myRunnerParameters">
+            <MavenRunnerParameters>
+              <option name="profiles">
+                <set />
+              </option>
+              <option name="goals">
+                <list>
+                  <option value="quarkus:dev" />
+                </list>
+              </option>
+              <option name="pomFileName" value="pom.xml" />
+              <option name="profilesMap">
+                <map />
+              </option>
+              <option name="resolveToWorkspace" value="false" />
+              <option name="workingDirPath" value="$PROJECT_DIR$/common_quarkus" />
+            </MavenRunnerParameters>
+          </option>
+        </MavenSettings>
+        <targetMavenLocalRepo />
+      </QsMavenRunConfiguration>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="gateway2" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
       <module name="gateway2" />
+      <QsMavenRunConfiguration>
+        <MavenSettings>
+          <option name="myGeneralSettings" />
+          <option name="myRunnerSettings" />
+          <option name="myRunnerParameters">
+            <MavenRunnerParameters>
+              <option name="profiles">
+                <set />
+              </option>
+              <option name="goals">
+                <list>
+                  <option value="quarkus:dev" />
+                </list>
+              </option>
+              <option name="pomFileName" value="pom.xml" />
+              <option name="profilesMap">
+                <map />
+              </option>
+              <option name="resolveToWorkspace" value="false" />
+              <option name="workingDirPath" value="$PROJECT_DIR$/gateway2" />
+            </MavenRunnerParameters>
+          </option>
+        </MavenSettings>
+        <targetMavenLocalRepo />
+      </QsMavenRunConfiguration>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ws-productos" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
       <module name="ws-productos" />
+      <QsMavenRunConfiguration>
+        <MavenSettings>
+          <option name="myGeneralSettings" />
+          <option name="myRunnerSettings" />
+          <option name="myRunnerParameters">
+            <MavenRunnerParameters>
+              <option name="profiles">
+                <set />
+              </option>
+              <option name="goals">
+                <list>
+                  <option value="quarkus:dev" />
+                </list>
+              </option>
+              <option name="pomFileName" value="pom.xml" />
+              <option name="profilesMap">
+                <map />
+              </option>
+              <option name="resolveToWorkspace" value="false" />
+              <option name="workingDirPath" value="$PROJECT_DIR$/ws-productos" />
+            </MavenRunnerParameters>
+          </option>
+        </MavenSettings>
+        <targetMavenLocalRepo />
+      </QsMavenRunConfiguration>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ws-socios" type="QuarkusRunConfigurationType" factoryName="Quarkus" nameIsGenerated="true">
       <module name="ws-socios" />
+      <QsMavenRunConfiguration>
+        <MavenSettings>
+          <option name="myGeneralSettings" />
+          <option name="myRunnerSettings" />
+          <option name="myRunnerParameters">
+            <MavenRunnerParameters>
+              <option name="profiles">
+                <set />
+              </option>
+              <option name="goals">
+                <list>
+                  <option value="quarkus:dev" />
+                </list>
+              </option>
+              <option name="pomFileName" value="pom.xml" />
+              <option name="profilesMap">
+                <map />
+              </option>
+              <option name="resolveToWorkspace" value="false" />
+              <option name="workingDirPath" value="$PROJECT_DIR$/ws-socios" />
+            </MavenRunnerParameters>
+          </option>
+        </MavenSettings>
+        <targetMavenLocalRepo />
+      </QsMavenRunConfiguration>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -275,6 +411,9 @@
       <workItem from="1672421892489" duration="2387000" />
       <workItem from="1672441132674" duration="19513000" />
       <workItem from="1673266512929" duration="2293000" />
+      <workItem from="1673737388453" duration="12000" />
+      <workItem from="1673737643160" duration="1550000" />
+      <workItem from="1673739386567" duration="12279000" />
     </task>
     <servers />
   </component>

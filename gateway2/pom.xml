@@ -6,7 +6,7 @@
   <artifactId>gateway2</artifactId>
   <version>1.0.0</version>
   <parent>
-    <artifactId>trabajo</artifactId>
+    <artifactId>ssi</artifactId>
     <groupId>es.upsa.dasi</groupId>
     <version>1.0</version>
   </parent>
@@ -33,6 +33,7 @@
     </dependencies>
   </dependencyManagement>
   <dependencies>
+
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-openapi</artifactId>
