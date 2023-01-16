@@ -37,7 +37,7 @@ public class SocioServiceImpl implements SociosService {
     }
 
     @Override
-    public String requestDeleteSocio(String codigo) throws TiendaException {
-        return dao.requestDeleteSocio(codigo);
+    public void requestDeleteSocio(String codigo) throws TiendaException {
+         dao.requestDeleteSocio(codigo);
     }
 }

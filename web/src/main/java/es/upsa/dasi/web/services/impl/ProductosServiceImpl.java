@@ -39,7 +39,7 @@ public class ProductosServiceImpl implements ProductosService {
     }
 
     @Override
-    public boolean requestDelteProducto(String codigo) throws TiendaException {
-        return dao.requestDeleteProducto(codigo);
+    public void requestDelteProducto(String codigo) throws TiendaException {
+         dao.requestDeleteProducto(codigo);
     }
 }

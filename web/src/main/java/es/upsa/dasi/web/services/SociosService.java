@@ -12,5 +12,5 @@ public interface SociosService {
     public Optional<Socio> requestSocioByCodigo(String codigo) throws TiendaException;
     public Socio requestAddSocio(UnidentifiedSocio uSocio) throws TiendaException;
     Optional<Socio> requestUpdateSocio(Socio Socio) throws TiendaException;
-    String requestDeleteSocio(String codigo) throws TiendaException;
+    void requestDeleteSocio(String codigo) throws TiendaException;
 }

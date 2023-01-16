@@ -18,7 +18,6 @@ public class DaoImpl implements Dao {
     @Inject
     DataSource dataSource;
 
-
     @Override
     public List<Socio> requestSocios() throws TiendaException {
 

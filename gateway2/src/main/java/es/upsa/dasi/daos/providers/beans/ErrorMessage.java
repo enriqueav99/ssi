@@ -1,4 +1,4 @@
-package es.upsa.dasi.resources.providers.beans;
+package es.upsa.dasi.daos.providers.beans;
 
 import lombok.Builder;
 import lombok.Data;

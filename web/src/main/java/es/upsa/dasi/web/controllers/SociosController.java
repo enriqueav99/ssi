@@ -152,10 +152,10 @@ public class SociosController {
     @Path("/delete/{codigo}")
     public Response requestDeleteSocio(@PathParam("codigo") String codigo) throws TiendaException {
 
-        if (service.requestDeleteSocio(codigo)=="true"){
-            return Response.seeOther(mvc.uri("allSocios", Map.of("idioma", mvc.getLocale().getLanguage()))).build();
-        }
-        return Response.ok().entity("/jsps/socioNotFound.jsp").build();
+        service.requestDeleteSocio(codigo);
+        return Response.seeOther(mvc.uri("allSocios", Map.of("idioma", mvc.getLocale().getLanguage()))).build();
+
+
     }
 
 }

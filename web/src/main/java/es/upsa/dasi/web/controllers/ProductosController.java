@@ -105,14 +105,14 @@ public class ProductosController {
 
         Set<ConstraintViolation<ProductoBean>> violations = validator.validate(productoBean);
         if (violations.isEmpty()) {
-            return service.requestUpdateProducto(UnidentifiedProducto.builder()
+             service.requestUpdateProducto(UnidentifiedProducto.builder()
                             .nombre(productoBean.getNombre())
                             .descripcion(productoBean.getDescripcion())
                             .precio(productoBean.getPrecioAsDouble())
                             .stock(productoBean.getStockAsInt())
-                            .build(), codigo)
-                    .map(a -> Response.seeOther(mvc.uri("allProductos", Map.of("idioma", mvc.getLocale().getLanguage()))).build())
-                    .orElseGet(() -> Response.ok().entity("/jsps/productoNotFound.jsp").build());
+                            .build(), codigo);
+
+             return Response.seeOther(mvc.uri("allProductos", Map.of("idioma", mvc.getLocale().getLanguage()))).build();
         }
 
         List<String> errores = new ArrayList<>();
@@ -139,10 +139,9 @@ public class ProductosController {
     @Path("/{codigo}")
     public Response requestDelteProducto(@PathParam("codigo")String codigo) throws TiendaException {
 
-        if (service.requestDelteProducto(codigo)){
-            return Response.seeOther(mvc.uri("allProductos", Map.of("idioma", mvc.getLocale().getLanguage()))).build();
-        }
+        service.requestDelteProducto(codigo);
+        return Response.seeOther(mvc.uri("allProductos", Map.of("idioma", mvc.getLocale().getLanguage()))).build();
 
-        return Response.seeOther(mvc.uri("/jsps//productoNotFound.jsp")).build();
+
     }
 }

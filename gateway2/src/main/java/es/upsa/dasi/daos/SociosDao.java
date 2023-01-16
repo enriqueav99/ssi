@@ -36,6 +36,5 @@ public interface SociosDao {
 
     @DELETE
     @Path("{codigo}")
-    @Produces(MediaType.TEXT_PLAIN)
-    String deleteSocio(@PathParam("codigo") String codigo) throws TiendaException;
+    void deleteSocio(@PathParam("codigo") String codigo) throws TiendaException;
 }

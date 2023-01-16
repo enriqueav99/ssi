@@ -12,5 +12,5 @@ public interface ProductosService {
     public Optional<Producto> requestProducto(String codigo)throws TiendaException;
     public Producto requestAddProducto(UnidentifiedProducto uProducto)throws TiendaException;
     public Optional<Producto> requestUpdateProducto(UnidentifiedProducto unidentifiedProducto, String codigo)throws TiendaException;
-    public boolean requestDelteProducto(String codigo)throws TiendaException;
+    public void requestDelteProducto(String codigo)throws TiendaException;
 }

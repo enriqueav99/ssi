@@ -75,10 +75,11 @@ public abstract class ServiceCacheDecorator implements SocioService {
         return optUpdatedSocio;
     }
 
+    /**
     @Override
     public boolean deleteSocio(String codigo) throws TiendaException {
 
         Socio alumnoCachedDeleted = sociosRedisCommands.getdel(codigo);
         return service.deleteSocio(codigo);
-    }
+    } **/
 }

@@ -33,9 +33,10 @@ public interface ProductosDao {
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    Optional<Producto> requestUpdateProducto(UnidentifiedProducto unidentifiedProducto, String codigo)throws TiendaException;
+    @Path("/{codigo}")
+    Optional<Producto> requestUpdateProducto(UnidentifiedProducto unidentifiedProducto, @PathParam("codigo") String codigo)throws TiendaException;
 
     @DELETE
     @Path("/{codigo}")
-    boolean requestDeleteProducto(@PathParam("codigo") String codigo)throws TiendaException;
+    void requestDeleteProducto(@PathParam("codigo") String codigo)throws TiendaException;
 }

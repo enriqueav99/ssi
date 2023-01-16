@@ -28,11 +28,12 @@ public interface ProductosDao {
     public Producto addProducto(UnidentifiedProducto uProducto) throws TiendaException;
 
     @PUT
-    @Consumes
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     @Path("{codigo}")
     public Optional<Producto> replaceProducto(UnidentifiedProducto uProducto, @PathParam("codigo") String coddigo) throws TiendaException;
 
     @DELETE
     @Path("{codigo}")
-    public boolean deleteProducto(@PathParam("codigo") String codigo) throws TiendaException;
+    public void deleteProducto(@PathParam("codigo") String codigo) throws TiendaException;
 }

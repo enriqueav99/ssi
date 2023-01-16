@@ -3,8 +3,7 @@ package es.upsa.dasi.resources;
 import es.upsa.dasi.dtos.UnidentifiedProducto;
 import es.upsa.dasi.exceptions.TiendaException;
 import es.upsa.dasi.model.Producto;
-import es.upsa.dasi.model.Socio;
-import es.upsa.dasi.resources.providers.beans.ErrorMessage;
+import es.upsa.dasi.daos.providers.beans.ErrorMessage;
 import es.upsa.dasi.services.ProductosService;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.enums.ParameterIn;
@@ -21,7 +20,6 @@ import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
-import java.awt.*;
 import java.util.List;
 
 
@@ -213,7 +211,6 @@ public class ProductosResource {
                                                                             )
                                                                       )
                                                 )
-
                                     UnidentifiedProducto uProducto)throws TiendaException
     {
 
@@ -249,11 +246,9 @@ public class ProductosResource {
                                              )
                                    @PathParam("codigo") String codigo) throws TiendaException {
 
-        if (service.deleteProducto(codigo)){
-            return Response.ok().build();
-        }else {
-            return Response.status(Response.Status.NOT_FOUND).build();
-        }
+        service.deleteProducto(codigo);
+        return Response.ok().build();
+
 
     }
 

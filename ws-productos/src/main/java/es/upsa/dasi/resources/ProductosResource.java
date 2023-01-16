@@ -196,6 +196,7 @@ public class ProductosResource {
     })
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     @Path("/{codigo}")
     public Response replaceProducto(@Parameter(required = true,
                                                 description = "Codigo del producto",

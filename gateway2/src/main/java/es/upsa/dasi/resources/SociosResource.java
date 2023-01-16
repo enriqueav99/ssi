@@ -4,7 +4,7 @@ import es.upsa.dasi.dtos.UnidentifiedSocio;
 import es.upsa.dasi.exceptions.TiendaException;
 import es.upsa.dasi.model.Producto;
 import es.upsa.dasi.model.Socio;
-import es.upsa.dasi.resources.providers.beans.ErrorMessage;
+import es.upsa.dasi.daos.providers.beans.ErrorMessage;
 import es.upsa.dasi.services.SociosService;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.enums.ParameterIn;
@@ -225,7 +225,6 @@ public class SociosResource {
     })
     @DELETE
     @Path("/{codigo}")
-    @Produces(MediaType.TEXT_PLAIN)
     public Response deleteSocio(@Parameter(required = true,
                                             description = "Código del socio",
                                             in = ParameterIn.PATH,
@@ -235,11 +234,9 @@ public class SociosResource {
                                  @PathParam("codigo") String codigo) throws TiendaException {
 
 
-        if (socioService.deleteSocio(codigo)=="true"){
-            return Response.ok().entity("true").build();
-        }else {
-            return Response.status(Response.Status.NOT_FOUND).build();
-        }
+        socioService.deleteSocio(codigo);
+            return Response.ok().build();
+
     }
 
 }
