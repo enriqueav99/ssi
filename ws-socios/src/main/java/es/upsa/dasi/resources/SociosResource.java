@@ -98,44 +98,6 @@ public class SociosResource {
 
 
 
-    @Operation(operationId = "selecSocio",
-            summary = "Acceso a los datos de varios socios identificados por su codigo",
-            description = "Devuelve los datos de los socios identificados a través de la lista de códigos que se proporciona"
-    )
-    @APIResponses({
-            @APIResponse(responseCode = "200",
-                    description = "Se han localizado a los socios de dichos codigos, y se devuelven sus datos",
-                    content = @Content(mediaType = MediaType.APPLICATION_JSON,
-                            schema = @Schema(type = SchemaType.OBJECT,
-                                    implementation = Socio.class
-                            )
-                    )
-            ),
-            @APIResponse(responseCode = "404",
-                    description = "No hay registrado ningún socio con los codigos especificados"
-            )
-    })
-    @GET
-    public Response selecSocios(@Parameter(required = true,
-                                           description = "Lista de codigos de los socios",
-                                           in = ParameterIn.QUERY,
-                                           name = "codigos",
-                                           schema = @Schema(type = SchemaType.ARRAY)
-                               )
-                                @QueryParam("codigos")List<String> codigos) throws TiendaException {
-        List<Socio> socios;
-        if ( codigos == null )
-        {
-            socios = service.requestSocios();
-        }else{
-            socios = service.selectSocios(codigos);
-        }
-
-        return Response.ok()
-                .entity(new GenericEntity<List<Socio>>(socios){})
-                .build();
-    }
-
 
     @Operation(operationId = "addSocio",
             description = "Crea un nuevo socio",
