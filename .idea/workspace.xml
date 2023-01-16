@@ -11,45 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="009c8291-fbfa-4569-87a3-d48998f5a58d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/ProductosDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/ProductosDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/SociosDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/SociosDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/providers/TiendaResponseExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/providers/TiendaResponseExceptionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources/ProductosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources/ProductosResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources/SociosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources/SociosResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/resources/providers/beans/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/daos/providers/beans/ErrorMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/ProductosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/ProductosService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/SociosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/SociosService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/impl/ProductosServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/impl/ProductosServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/impl/SociosServicecImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway2/src/main/java/es/upsa/dasi/services/impl/SociosServicecImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/controllers/ProductosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/controllers/ProductosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/controllers/SociosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/controllers/SociosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/daos/ProductosDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/daos/ProductosDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/daos/SociosDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/daos/SociosDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/services/ProductosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/services/ProductosService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/services/SociosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/services/SociosService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/services/impl/ProductosServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/services/impl/ProductosServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/services/impl/SocioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/es/upsa/dasi/web/services/impl/SocioServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/controllers/ProductosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/controllers/ProductosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/controllers/SociosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/controllers/SociosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/daos/ProductosDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/daos/ProductosDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/daos/SociosDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/daos/SociosDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/services/ProductosService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/services/ProductosService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/services/SociosService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/services/SociosService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/services/impl/ProductosServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/services/impl/ProductosServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/services/impl/SocioServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/es/upsa/dasi/web/services/impl/SocioServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/common-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/common-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/controllers/ProductosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/controllers/ProductosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/controllers/SociosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/controllers/SociosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/daos/ProductosDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/daos/ProductosDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/daos/SociosDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/daos/SociosDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/services/ProductosService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/services/ProductosService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/services/SociosService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/services/SociosService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/services/impl/ProductosServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/services/impl/ProductosServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/services/impl/SocioServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/es/upsa/dasi/web/services/impl/SocioServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/lib/common-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/lib/common-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/resources/ProductosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-productos/src/main/java/es/upsa/dasi/resources/ProductosResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/cache/ServiceCacheDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/cache/ServiceCacheDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/daos/impl/DaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/daos/impl/DaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/SociosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ws-socios/src/main/java/es/upsa/dasi/resources/SociosResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -421,7 +386,7 @@
       <workItem from="1673737388453" duration="12000" />
       <workItem from="1673737643160" duration="1550000" />
       <workItem from="1673739386567" duration="16393000" />
-      <workItem from="1673813438739" duration="6442000" />
+      <workItem from="1673813438739" duration="9948000" />
     </task>
     <servers />
   </component>
