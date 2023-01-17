@@ -140,7 +140,6 @@ services:
       QUARKUS_SWAGGER_UI_PATH: /swagger-ui
     depends_on:
       - database
-      - redis
       - redis-1
       - redis-2
       - redis-3
